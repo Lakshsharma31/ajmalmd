@@ -15,7 +15,7 @@ global.bochil = require('@bochilteam/scraper')
 global.baileys = require('@adiwajshing/baileys')
 
 
-global.owner = ["919744196187","918113921898","919778383987","919656459062"] // Change owner number => src/premium.json
+global.owner = ["919389379221"] // Change owner number => src/premium.json
 global.mods = JSON.parse(fs.readFileSync('./src/moderator.json')) // Moderator?
 global.prems = JSON.parse(fs.readFileSync('./src/premium.json')) // Premium user has unlimited limit
 
@@ -35,17 +35,17 @@ global.APIKeys = { // APIKey Here
   'https://api.lolhuman.xyz': '7ecba1cc37eca2e93d6a983b',
   'https://hardianto.xyx': 'hardianto',
   'https://api.neoxr.eu.org': 'yourkey',
-  'https://api.xteam.xyz': 'benniismaelapikey',
+  'https://api.xteam.xyz': '4ed1ef79ec3bb779',
   'https://api.zeks.me': 'apivinz'
 }
 
 
 //=========== Bot Name =============//
-global.name = 'Sonic-MD'
+global.name = 'fellen-angel-MD'
 
 //=========== Don't Change ============//
-global.packname = `ᴛᴇᴀᴍ ᴇʟᴇᴄᴛʀᴀ`
-global.author = 'sᴏɴɪᴄ ᴍᴅ'
+global.packname = `Mrs Dia hatake🚀`
+global.author = 'ᴹᴿ᭄ ᴋᴀᴋᴀsʜɪོ ×፝֟͜×'
 //=====================================//
 
 
@@ -59,23 +59,23 @@ global.ucpn = ''
 
 //================= Url =================//
 global.linkgc = 'https://chat.whatsapp.com/HZ4c5yrsd0g8OfELZGySFZ'
-global.linkig = 'https://www.instagram.com/toxic_ajmal_'
+global.linkig = 'https://Instagram.com/kakashi_coder'
 global.linkyt = ''
 global.linkfb = 'https://fb.watch/aYv0jAffAO'
 global.web = 'https://github.com/Team-Electra4'
-global.web1 = 'https://A-J-M-A-L.github.io'
+global.web1 = 'https://Instagram.com/kakashi_coder'
 
 global.deslink = ''
 global.titlink = 'Folllow me on Instagram'
-global.bodlink = '@toxic_ajmal_'
+global.bodlink = '@kakashi_coder'
 
 //========= Url Template Button =========//
 global.dtu = 'ᴏᴡɴᴇʀ ɪɴsᴛᴀ'
-global.urlnya = 'https://www.instagram.com/toxic_ajmal_'
+global.urlnya = 'https://www.instagram.com/kakashi_coder'
 
 //========= Call Template Button =========//
 global.dtc = 'ᴄᴀʟʟ ᴏᴡɴᴇʀ'
-global.nmbrnya = '919744196187'
+global.nmbrnya = '919389379221'
 
 
 //============ The bot process ============//
