@@ -214,8 +214,8 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
         const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fromObject({
         listMessage: {
             title: aoa,
-            description: 'Sonic-MD',
-            buttonText: '𝚂𝙴𝙻𝙴𝙲𝚃 𝙼𝙴𝙽𝚄',
+            description: 'Bot under development so report you issues to owner',
+            buttonText: 'Command list',
             listType: 1,
             footerText: wm,
             mtype: 'listMessage',
