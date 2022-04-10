@@ -1,12 +1,14 @@
 let gtts = require('node-gtts')
 let fs = require('fs')
 let path = require('path')
+let { spawn } = require('child_process')
+
 const defaultLang = 'en'
-let handler = async (m, { conn, usedPrefix, command, args }) => {
-  let name = m.sender
-  let text = args[0]
-  let lang = args.slice(1).join('|')
-  if ((args[1] || '').length !== 2) {
+let handler = async (m, { conn, args }) => {
+
+  let lang = args[0]
+  let text = args.slice(1).join(' ')
+  if ((args[0] || '').length !== 2) {
     lang = defaultLang
     text = args.join(' ')
   }
@@ -14,19 +16,19 @@ let handler = async (m, { conn, usedPrefix, command, args }) => {
 
   let res
   try { res = await tts(text, lang) }
-  catch {
+  catch (e) {
+    m.reply(e + '')
     res = await tts(text)
   } finally {
-  if(res) conn.sendFile(m.chat, res, 'tts.opus', null, m, true) 
-   else return m.reply(`Need Text to Speak \n \nExample: *${usedPrefix}${command} Team-Electra*`)
+    conn.sendFile(m.chat, res, 'tts.opus', null, m, true)
   }
 }
-handler.help = ['ᴛᴛs <ᴛᴇxᴛ>|<ʟᴀɴɢ> ']
+handler.help = ['tts <lang> <txt>']
 handler.tags = ['tools']
 handler.command = /^g?tts$/i
 module.exports = handler
 
-function tts(text, lang = 'id') {
+function tts(text, lang = 'en') {
   console.log(lang, text)
   return new Promise((resolve, reject) => {
     try {
